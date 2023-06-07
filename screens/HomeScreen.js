@@ -36,6 +36,8 @@ const HomeScreen = () => {
           })
     }, [])
 
+
+
   return (
     <SafeAreaView  className='bg-white pt-8'>
         {/* <Text className='text-red-500'> */}
@@ -82,7 +84,16 @@ const HomeScreen = () => {
             <Categories />
 
             {/* Featured rows */}
-            <FeaturedRow 
+
+            {featuredCategories.map((category) => (
+                <FeaturedRow 
+                    key={category._id}
+                    id={category._id}
+                    title={category.name}
+                    description={category.short_description}
+                />
+            ))}
+            {/* <FeaturedRow 
                 id="1"
                 title='Featured'
                 description='Promoted restaurants'
@@ -96,7 +107,7 @@ const HomeScreen = () => {
                 id="3"
                 title='Offers near you'
                 description='Support your local bussiness'
-            />
+            /> */}
 
 
 
