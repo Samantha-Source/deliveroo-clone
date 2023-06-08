@@ -7,7 +7,6 @@ import { useNavigation } from '@react-navigation/native';
 
 const RestaurantCard = ({ id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat }) => {
 
-// console.log('RestaurantCard.js ->' ,)
 
   const navigation = useNavigation();
 
