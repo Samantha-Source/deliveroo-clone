@@ -23,8 +23,7 @@ const FeaturedRow = ({ id, title, description }) => {
             setRestaurants(data?.restaurants);
         })
     }, [])
-
-    console.log(restaurants)
+console.log(restaurants[0])
   return (
     <View>
       <View className="mt-4 flex-row items-center justify-between px-4">
@@ -63,42 +62,7 @@ const FeaturedRow = ({ id, title, description }) => {
 
 
 
-        {/* <RestaurantCard 
-            id={1}
-            imgUrl={'https://links.papareact.com/gn7'}
-            title='Yo! Suhi!'
-            rating={4.5}
-            genre='Japanese'
-            address='123 Fake st'
-            short_description='A short test description'
-            dishes={[]}
-            long={20}
-            lat={0}
-        />
-        <RestaurantCard 
-            id={2}
-            imgUrl={'https://links.papareact.com/gn7'}
-            title='Yo! Suhi!'
-            rating={4.5}
-            genre='Japanese'
-            address='123 Fake st'
-            short_description='A short test description'
-            dishes={[]}
-            long={20}
-            lat={0}
-        />
-        <RestaurantCard 
-            id={3}
-            imgUrl={'https://links.papareact.com/gn7'}
-            title='Yo! Suhi!'
-            rating={4.5}
-            genre='Japanese'
-            address='123 Fake st'
-            short_description='A short test description'
-            dishes={[]}
-            long={20}
-            lat={0}
-        /> */}
+      
         
       </ScrollView>
     </View>

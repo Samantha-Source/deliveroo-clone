@@ -83,6 +83,7 @@ const HomeScreen = () => {
             {/* Categories */}
             <Categories />
 
+
             {/* Featured rows */}
 
             {featuredCategories.map((category) => (
@@ -93,22 +94,6 @@ const HomeScreen = () => {
                     description={category.short_description}
                 />
             ))}
-            {/* <FeaturedRow 
-                id="1"
-                title='Featured'
-                description='Promoted restaurants'
-            />
-            <FeaturedRow 
-                id="2"
-                title='Tasty Discounts'
-                description="Everyone's enjoying these juicy discounts!"
-            />
-            <FeaturedRow 
-                id="3"
-                title='Offers near you'
-                description='Support your local bussiness'
-            /> */}
-
 
 
 

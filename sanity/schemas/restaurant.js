@@ -8,7 +8,7 @@ export default defineType({
     {
       name: "name",
       type: "string",
-      title: "Restaurant name",
+      title: "Title",
       validation: (Rule) => Rule.required(),
     },
     {
@@ -49,8 +49,8 @@ export default defineType({
         .error("Please enter a value between 1 - 5")
     },
     {
-      name: "type",
-      title: "Category",
+      name: "genre",
+      title: "Menu Category",
       validation: (Rule) => Rule.required(),
       type: "reference",
       to: [{ type: "category" }],
