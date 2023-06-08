@@ -36,6 +36,7 @@ const HomeScreen = () => {
           })
     }, [])
 
+    // console.log(`$$$$$$$$$$$`, featuredCategories[0])
 
 
   return (

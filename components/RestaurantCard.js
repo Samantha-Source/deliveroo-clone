@@ -6,7 +6,9 @@ import { urlFor } from '../sanity';
 import { useNavigation } from '@react-navigation/native';
 
 const RestaurantCard = ({ id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat }) => {
-console.log(genre)
+
+// console.log('RestaurantCard.js ->' ,)
+
   const navigation = useNavigation();
 
   return (

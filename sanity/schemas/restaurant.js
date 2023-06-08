@@ -49,7 +49,7 @@ export default defineType({
         .error("Please enter a value between 1 - 5")
     },
     {
-      name: "genre",
+      name: "type",
       title: "Menu Category",
       validation: (Rule) => Rule.required(),
       type: "reference",

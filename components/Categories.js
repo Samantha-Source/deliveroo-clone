@@ -15,6 +15,7 @@ const Categories = () => {
     })
   }, [])
 
+  // console.log('@@@@@@@', categories)
   return (
     <ScrollView
         horizontal
@@ -30,7 +31,7 @@ const Categories = () => {
           <CategoryCard 
           key={category._id}
           imgUrl={category.image}
-          title={category.title} 
+          title={category.name} 
           />
         ))}
 
