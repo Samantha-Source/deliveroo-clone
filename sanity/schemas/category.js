@@ -16,12 +16,5 @@ export default defineType({
       title: 'Image of Category',
       type: 'image',
     }),
-    // defineField({
-    //   name: 'restaurants',
-    //   title: 'Restaurants',
-    //   type: 'array',
-    //   validation: (Rule) => Rule.required(),
-    //   of: [{ type: "reference", to: [{ type: 'restaurant' }] }],
-    // }),
   ],
 })

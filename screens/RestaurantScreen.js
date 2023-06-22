@@ -8,6 +8,7 @@ import DishRow from '../components/DishRow';
 import BasketIcon from '../components/BasketIcon';
 import { useDispatch } from 'react-redux';
 import { setRestaurant } from '../features/restaurantSlice';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 const RestaurantScreen = () => {
@@ -41,6 +42,7 @@ const RestaurantScreen = () => {
 
   return (
     <>
+    <SafeAreaView>
       <BasketIcon />
 
       <ScrollView>
@@ -100,6 +102,7 @@ const RestaurantScreen = () => {
 
         </View>
       </ScrollView>
+      </SafeAreaView>
     </>
   )
 }

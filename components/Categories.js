@@ -15,7 +15,6 @@ const Categories = () => {
     })
   }, [])
 
-  // console.log('@@@@@@@', categories)
   return (
     <ScrollView
         horizontal
